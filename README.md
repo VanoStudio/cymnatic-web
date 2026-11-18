@@ -11,6 +11,7 @@ Semua materi ada di folder `checkpoint`. Satu folder berisi hasil akhir satu per
 | `P03` | Linktree tahap 3 (CSS dasar: warna dan font) |
 | `P04` | Linktree tahap 4 (box model, tombol, hover) |
 | `J01` | JavaScript pertama (console.log, variabel, sapaan) |
+| `J02` | Halaman yang menjawab (function, onclick, input, if else) |
 
 Kode `P` untuk pertemuan HTML dan CSS (Selasa), kode `J` untuk pertemuan JavaScript (Kamis).
 

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Linktree Versi Kita</title>
+<style>
+body {
+background-color: #070d09;
+color: white;
+font-family: Arial, sans-serif;
+font-size: 18px;
+text-align: center;
+}
+
+h1 {
+color: orange;
+}
+
+ul {
+list-style: none;
+padding: 0;
+max-width: 320px;
+margin: 0 auto;
+}
+
+li {
+margin-bottom: 12px;
+}
+
+a {
+display: block;
+background-color: #3ddc84;
+color: #070d09;
+padding: 14px;
+border: 2px solid #3ddc84;
+border-radius: 12px;
+font-weight: bold;
+text-decoration: none;
+}
+
+a:hover {
+background-color: #ff9f1c;
+border-color: #ff9f1c;
+}
+
+input {
+padding: 10px;
+border: 2px solid #3ddc84;
+border-radius: 8px;
+background-color: #0b1510;
+color: white;
+font-size: 16px;
+}
+
+button {
+padding: 10px 18px;
+border: none;
+border-radius: 8px;
+background-color: #ff9f1c;
+color: #070d09;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+}
+
+#sapaan {
+color: #ff9f1c;
+font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<h1>Nama Kamu</h1>
+<img src="foto.png" alt="Foto profil Nama Kamu" width="200">
+<p>Siswa PPLG di SMK Cyber Media. Suka ngoding dan main game.</p>
+
+<input id="inputNama" type="text" placeholder="Ketik namamu di sini">
+<button onclick="sapa()">Sapa</button>
+<p id="sapaan"></p>
+
+<ul>
+<li><a href="https://www.instagram.com/">Instagram Sekolah</a></li>
+<li><a href="https://www.youtube.com/">YouTube Favorit</a></li>
+<li><a href="https://github.com/">GitHub Saya</a></li>
+<li><a href="https://www.tiktok.com/">TikTok</a></li>
+</ul>
+
+<script>
+function sapa() {
+const nama = document.getElementById("inputNama").value.trim();
+const sapaan = document.getElementById("sapaan");
+if (nama === "") {
+sapaan.textContent = "Isi namamu dulu ya!";
+} else {
+sapaan.textContent = `Halo, ${nama}! Selamat datang di Linktree-ku.`;
+}
+}
+</script>
+
+</body>
+</html>
